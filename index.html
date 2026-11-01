@@ -110,6 +110,19 @@
   .submit:disabled { opacity: .6; cursor: default; }
   .note { font-size: 15px; color: var(--ink-soft); margin: 16px 0 0; }
   .note a, .status a { color: inherit; }
+  .install {
+    display: inline-flex;
+    align-items: center;
+    min-height: 46px;
+    margin-top: 4px;
+    padding: 8px 24px;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  .install:hover { background: #4a3b27; }
+  .install:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   .status { margin: 16px 0 0; font-weight: bold; }
   .status.error { color: var(--fix); }
   .status.ok { color: var(--new); }
@@ -175,6 +188,11 @@
       </form>
       <p class="note"><span data-t="privacy"></span> <a href="mailto:lightningbolt.gaming.opa@gmail.com">lightningbolt.gaming.opa@gmail.com</a></p>
     </article>
+    <article>
+      <h2 data-t="installTitle"></h2>
+      <p data-t="installText"></p>
+      <a class="install" href="https://play.google.com/apps/internaltest/4700783611026863689" target="_blank" rel="noopener" data-t="installButton"></a>
+    </article>
   </main>
 </div>
 <script src="updates.js"></script>
@@ -189,7 +207,8 @@
       consent: "Sunt de acord ca adresa mea să fie folosită pentru acest test.", send: "Trimite", sending: "Se trimite…",
       sent: "Mulțumim! Dacă ești acceptat, primești un e-mail cu linkul de instalare.",
       failed: "Nu am putut trimite formularul. Verifică internetul și încearcă din nou.",
-      privacy: "Folosim datele doar pentru organizarea testului și le ștergem după încheierea acestuia. Pentru ștergere mai devreme, scrie la"
+      privacy: "Folosim datele doar pentru organizarea testului și le ștergem după încheierea acestuia. Pentru ștergere mai devreme, scrie la",
+      installTitle: "Ai fost acceptat?", installText: "Linkul funcționează doar pentru testerii invitați, conectați cu adresa trimisă în formular.", installButton: "Instalează din Google Play"
     },
     en: {
       page: "Kalenoth – Updates", title: "Updates", lead: "Everything that changed in the game, newest first.",
@@ -200,7 +219,8 @@
       consent: "I agree to my address being used for this test.", send: "Send", sending: "Sending…",
       sent: "Thank you! If you are accepted, you will receive an email with the install link.",
       failed: "The form could not be sent. Check your connection and try again.",
-      privacy: "We use this data only to run the test and delete it when the test ends. To have it deleted sooner, write to"
+      privacy: "We use this data only to run the test and delete it when the test ends. To have it deleted sooner, write to",
+      installTitle: "Have you been accepted?", installText: "The link works only for invited testers, signed in with the address sent in the form.", installButton: "Install from Google Play"
     }
   };
   // Answers go to the Google Form behind the page; the entry ids come from that form.
