@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalenoth – Noutăți</title>
+<meta name="description" content="Jurnalul de actualizări al jocului Kalenoth.">
+<link rel="icon" type="image/png" href="images/icon.png">
+<style>
+  :root {
+    --bg: #1c1a15;
+    --paper: #efe2c4;
+    --paper-edge: #cdb98d;
+    --ink: #33281a;
+    --ink-soft: #6a5a42;
+    --gold: #d9ad55;
+    --text-on-bg: #eadfc8;
+    --muted-on-bg: #a89c84;
+    --new: #39713f;
+    --better: #2f6085;
+    --fix: #9a4a2c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-on-bg);
+    font: 17px/1.55 Georgia, "Times New Roman", serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px 64px; }
+  header { padding: 20px 0 8px; }
+  .bar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .bar img { width: 44px; height: 44px; border-radius: 10px; }
+  .bar strong { font-size: 22px; color: var(--gold); letter-spacing: .02em; }
+  .lang { margin-left: auto; display: flex; gap: 4px; }
+  button {
+    font: inherit;
+    font-size: 15px;
+    min-height: 40px;
+    padding: 6px 14px;
+    color: var(--text-on-bg);
+    background: transparent;
+    border: 1px solid #5c5340;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--gold); }
+  button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  button[aria-pressed="true"] { background: var(--gold); border-color: var(--gold); color: #2a2010; }
+  .banner { display: block; width: 100%; height: auto; border-radius: 10px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 24px 0 4px; }
+  .lead { margin: 0 0 16px; color: var(--muted-on-bg); }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  article {
+    background: var(--paper);
+    color: var(--ink);
+    border: 1px solid var(--paper-edge);
+    border-radius: 8px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+  }
+  time { color: var(--ink-soft); font-size: 15px; }
+  .ver { color: var(--ink-soft); font-size: 15px; }
+  h2 { font-size: 22px; line-height: 1.25; margin: 2px 0 12px; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { display: flex; align-items: baseline; gap: 10px; padding: 5px 0; }
+  .tag {
+    flex: 0 0 82px;
+    font: bold 12px/1.5 system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+  }
+  .tag.new { color: var(--new); }
+  .tag.better { color: var(--better); }
+  .tag.fix { color: var(--fix); }
+  .empty { color: var(--muted-on-bg); }
+  @media (max-width: 520px) {
+    h1 { font-size: 25px; }
+    article { padding: 16px; }
+    li { flex-direction: column; gap: 0; padding: 7px 0; }
+    .tag { flex: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="bar">
+      <img src="images/icon.png" alt="">
+      <strong>Kalenoth</strong>
+      <div class="lang">
+        <button type="button" data-lang="ro">RO</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+    <img class="banner" id="banner" width="1024" height="500" alt="">
+    <h1 id="title"></h1>
+    <p class="lead" id="lead"></p>
+  </header>
+  <div class="filters" id="filters"></div>
+  <main id="log"></main>
+</div>
+<script src="updates.js"></script>
+<script>
+  var TEXT = {
+    ro: {
+      page: "Kalenoth – Noutăți", title: "Noutăți", lead: "Tot ce s-a schimbat în joc, de la cea mai nouă actualizare.",
+      all: "Toate", "new": "Nou", better: "Îmbunătățit", fix: "Reparat", version: "versiunea", empty: "Nimic de afișat aici.", alt: "Kalenoth, joc RPG pentru telefon"
+    },
+    en: {
+      page: "Kalenoth – Updates", title: "Updates", lead: "Everything that changed in the game, newest first.",
+      all: "All", "new": "New", better: "Improved", fix: "Fixed", version: "version", empty: "Nothing to show here.", alt: "Kalenoth, an RPG for phones"
+    }
+  };
+  var FILTERS = ["all", "new", "better", "fix"];
+  var lang = "ro";
+  var filter = "all";
+
+  try {
+    var saved = localStorage.getItem("kalenoth-lang");
+    if (saved === "ro" || saved === "en") lang = saved;
+    else if ((navigator.language || "").toLowerCase().indexOf("ro") !== 0) lang = "en";
+  } catch (e) {}
+
+  function el(tag, className, text) {
+    var node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text) node.textContent = text;
+    return node;
+  }
+
+  function formatDate(iso) {
+    var parts = iso.split("-");
+    var date = new Date(+parts[0], +parts[1] - 1, +parts[2]);
+    return date.toLocaleDateString(lang === "ro" ? "ro-RO" : "en-GB", { day: "numeric", month: "long", year: "numeric" });
+  }
+
+  function render() {
+    var t = TEXT[lang];
+    document.documentElement.lang = lang;
+    document.title = t.page;
+    document.getElementById("title").textContent = t.title;
+    document.getElementById("lead").textContent = t.lead;
+    var banner = document.getElementById("banner");
+    banner.src = "images/banner_" + lang + ".png";
+    banner.alt = t.alt;
+
+    document.querySelectorAll("[data-lang]").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang);
+    });
+
+    var filters = document.getElementById("filters");
+    filters.textContent = "";
+    FILTERS.forEach(function (f) {
+      var b = el("button", "", t[f]);
+      b.type = "button";
+      b.setAttribute("aria-pressed", f === filter);
+      b.onclick = function () { filter = f; render(); };
+      filters.appendChild(b);
+    });
+
+    var log = document.getElementById("log");
+    log.textContent = "";
+    var shown = 0;
+    window.KALENOTH_UPDATES.forEach(function (update) {
+      var items = update.items.filter(function (i) { return filter === "all" || i.type === filter; });
+      if (!items.length) return;
+      shown++;
+      var article = el("article");
+      var time = el("time", "", formatDate(update.date));
+      time.dateTime = update.date;
+      article.appendChild(time);
+      if (update.version) article.appendChild(el("span", "ver", " · " + t.version + " " + update.version));
+      article.appendChild(el("h2", "", update.title[lang]));
+      var list = el("ul");
+      items.forEach(function (i) {
+        var li = el("li");
+        li.appendChild(el("span", "tag " + i.type, t[i.type]));
+        li.appendChild(el("span", "", i[lang]));
+        list.appendChild(li);
+      });
+      article.appendChild(list);
+      log.appendChild(article);
+    });
+    if (!shown) log.appendChild(el("p", "empty", t.empty));
+  }
+
+  document.querySelectorAll("[data-lang]").forEach(function (b) {
+    b.onclick = function () {
+      lang = b.getAttribute("data-lang");
+      try { localStorage.setItem("kalenoth-lang", lang); } catch (e) {}
+      render();
+    };
+  });
+  render();
+</script>
+</body>
+</html>
