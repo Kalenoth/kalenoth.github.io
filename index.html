@@ -74,6 +74,45 @@
   .tag.better { color: var(--better); }
   .tag.fix { color: var(--fix); }
   .empty { color: var(--muted-on-bg); }
+  [hidden] { display: none !important; }
+  .nav { display: flex; gap: 8px; margin-top: 16px; }
+  .nav a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 6px 16px;
+    color: var(--text-on-bg);
+    border: 1px solid #5c5340;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  .nav a:hover { border-color: var(--gold); }
+  .nav a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .nav a[aria-current="page"] { background: var(--gold); border-color: var(--gold); color: #2a2010; }
+  .field { margin-bottom: 16px; }
+  .field label { display: block; font-weight: bold; margin-bottom: 4px; }
+  .field input, .field select {
+    width: 100%;
+    min-height: 44px;
+    padding: 8px 10px;
+    font: inherit;
+    color: var(--ink);
+    background: #fbf5e6;
+    border: 1px solid #9c8a64;
+    border-radius: 6px;
+  }
+  .consent { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 16px; }
+  .consent input { width: 22px; height: 22px; flex: none; margin: 3px 0 0; }
+  .trap { position: absolute; left: -9999px; }
+  .submit { background: var(--ink); border-color: var(--ink); color: var(--paper); font-size: 17px; min-height: 46px; padding: 8px 24px; }
+  .submit:hover { border-color: var(--ink); background: #4a3b27; }
+  .submit:focus-visible { outline-color: var(--ink); }
+  .submit:disabled { opacity: .6; cursor: default; }
+  .note { font-size: 15px; color: var(--ink-soft); margin: 16px 0 0; }
+  .note a, .status a { color: inherit; }
+  .status { margin: 16px 0 0; font-weight: bold; }
+  .status.error { color: var(--fix); }
+  .status.ok { color: var(--new); }
   @media (max-width: 520px) {
     h1 { font-size: 25px; }
     article { padding: 16px; }
@@ -94,24 +133,80 @@
       </div>
     </div>
     <img class="banner" id="banner" width="1024" height="500" alt="">
+    <nav class="nav">
+      <a href="#" id="nav-updates" data-t="navUpdates"></a>
+      <a href="#tester" id="nav-tester" data-t="navTester"></a>
+    </nav>
     <h1 id="title"></h1>
     <p class="lead" id="lead"></p>
   </header>
-  <div class="filters" id="filters"></div>
-  <main id="log"></main>
+  <div id="view-updates">
+    <div class="filters" id="filters"></div>
+    <main id="log"></main>
+  </div>
+  <main id="view-tester" hidden>
+    <article>
+      <form id="tester-form">
+        <div class="field">
+          <label for="t-email" data-t="email"></label>
+          <input id="t-email" type="email" autocomplete="email" maxlength="200" required>
+        </div>
+        <div class="field">
+          <label for="t-phone" data-t="phone"></label>
+          <input id="t-phone" type="text" maxlength="100" required>
+        </div>
+        <div class="field">
+          <label for="t-language" data-t="language"></label>
+          <select id="t-language" required>
+            <option value="Romana">Română</option>
+            <option value="Engleza">English</option>
+          </select>
+        </div>
+        <div class="trap" aria-hidden="true">
+          <label for="t-website">Website</label>
+          <input id="t-website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="consent">
+          <input id="t-consent" type="checkbox" required>
+          <label for="t-consent" data-t="consent"></label>
+        </div>
+        <button class="submit" id="t-submit" type="submit" data-t="send"></button>
+        <p class="status" id="t-status" role="status" hidden></p>
+      </form>
+      <p class="note"><span data-t="privacy"></span> <a href="mailto:lightningbolt.gaming.opa@gmail.com">lightningbolt.gaming.opa@gmail.com</a></p>
+    </article>
+  </main>
 </div>
 <script src="updates.js"></script>
 <script>
   var TEXT = {
     ro: {
       page: "Kalenoth – Noutăți", title: "Noutăți", lead: "Tot ce s-a schimbat în joc, de la cea mai nouă actualizare.",
-      all: "Toate", "new": "Nou", better: "Îmbunătățit", fix: "Reparat", version: "versiunea", empty: "Nimic de afișat aici.", alt: "Kalenoth, joc RPG pentru telefon"
+      all: "Toate", "new": "Nou", better: "Îmbunătățit", fix: "Reparat", version: "versiunea", empty: "Nimic de afișat aici.", alt: "Kalenoth, joc RPG pentru telefon",
+      navUpdates: "Noutăți", navTester: "Devino tester", testerPage: "Kalenoth – Devino tester", testerTitle: "Devino tester",
+      testerLead: "Testul este închis, pe bază de invitație. Completarea formularului nu garantează un loc. Dacă ești acceptat, primești pe e-mail linkul de instalare.",
+      email: "Adresa Gmail folosită în Play Store", phone: "Modelul telefonului", language: "Limba preferată",
+      consent: "Sunt de acord ca adresa mea să fie folosită pentru acest test.", send: "Trimite", sending: "Se trimite…",
+      sent: "Mulțumim! Dacă ești acceptat, primești un e-mail cu linkul de instalare.",
+      failed: "Nu am putut trimite formularul. Verifică internetul și încearcă din nou.",
+      privacy: "Folosim datele doar pentru organizarea testului și le ștergem după încheierea acestuia. Pentru ștergere mai devreme, scrie la"
     },
     en: {
       page: "Kalenoth – Updates", title: "Updates", lead: "Everything that changed in the game, newest first.",
-      all: "All", "new": "New", better: "Improved", fix: "Fixed", version: "version", empty: "Nothing to show here.", alt: "Kalenoth, an RPG for phones"
+      all: "All", "new": "New", better: "Improved", fix: "Fixed", version: "version", empty: "Nothing to show here.", alt: "Kalenoth, an RPG for phones",
+      navUpdates: "Updates", navTester: "Become a tester", testerPage: "Kalenoth – Become a tester", testerTitle: "Become a tester",
+      testerLead: "The test is closed and invitation-only. Submitting this form does not guarantee a place. If you are accepted, you will receive the install link by email.",
+      email: "Gmail address used on Play Store", phone: "Phone model", language: "Preferred language",
+      consent: "I agree to my address being used for this test.", send: "Send", sending: "Sending…",
+      sent: "Thank you! If you are accepted, you will receive an email with the install link.",
+      failed: "The form could not be sent. Check your connection and try again.",
+      privacy: "We use this data only to run the test and delete it when the test ends. To have it deleted sooner, write to"
     }
   };
+  // Answers go to the Google Form behind the page; the entry ids come from that form.
+  var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSedvwPqaAdnxoCcv8z-BupDbZDQs0aPuJ-N9VBoT8dD9r0zBg/formResponse";
+  var FORM_CONSENT = "Sunt de acord ca adresa mea să fie folosită pentru acest test. / I agree to my address being used for this test.";
+  var statusKey = null;
   var FILTERS = ["all", "new", "better", "fix"];
   var lang = "ro";
   var filter = "all";
@@ -137,10 +232,20 @@
 
   function render() {
     var t = TEXT[lang];
+    var tester = location.hash === "#tester";
     document.documentElement.lang = lang;
-    document.title = t.page;
-    document.getElementById("title").textContent = t.title;
-    document.getElementById("lead").textContent = t.lead;
+    document.title = tester ? t.testerPage : t.page;
+    document.getElementById("title").textContent = tester ? t.testerTitle : t.title;
+    document.getElementById("lead").textContent = tester ? t.testerLead : t.lead;
+    document.getElementById("view-updates").hidden = tester;
+    document.getElementById("view-tester").hidden = !tester;
+    document.getElementById("nav-updates").toggleAttribute("aria-current", false);
+    document.getElementById("nav-tester").toggleAttribute("aria-current", false);
+    document.getElementById(tester ? "nav-tester" : "nav-updates").setAttribute("aria-current", "page");
+    document.querySelectorAll("[data-t]").forEach(function (node) {
+      node.textContent = t[node.getAttribute("data-t")];
+    });
+    renderStatus();
     var banner = document.getElementById("banner");
     banner.src = "images/banner_" + lang + ".png";
     banner.alt = t.alt;
@@ -189,9 +294,51 @@
     b.onclick = function () {
       lang = b.getAttribute("data-lang");
       try { localStorage.setItem("kalenoth-lang", lang); } catch (e) {}
+      document.getElementById("t-language").value = lang === "ro" ? "Romana" : "Engleza";
       render();
     };
   });
+
+  function renderStatus() {
+    var status = document.getElementById("t-status");
+    status.hidden = !statusKey;
+    status.className = "status " + (statusKey === "sent" ? "ok" : "error");
+    status.textContent = statusKey ? TEXT[lang][statusKey] : "";
+  }
+
+  document.getElementById("tester-form").onsubmit = function (event) {
+    event.preventDefault();
+    var form = event.target;
+    var button = document.getElementById("t-submit");
+    function done(key) {
+      statusKey = key;
+      button.disabled = false;
+      button.textContent = TEXT[lang].send;
+      if (key === "sent") form.reset();
+      document.getElementById("t-language").value = lang === "ro" ? "Romana" : "Engleza";
+      renderStatus();
+    }
+    // Bots fill the hidden field: they see the usual message and nothing is sent.
+    if (document.getElementById("t-website").value) { done("sent"); return; }
+
+    var body = new URLSearchParams();
+    body.append("entry.1663942067", document.getElementById("t-email").value.trim());
+    body.append("entry.1029943765", document.getElementById("t-phone").value.trim());
+    body.append("entry.1594879448", document.getElementById("t-language").value);
+    body.append("entry.1222540456", FORM_CONSENT);
+
+    statusKey = null;
+    renderStatus();
+    button.disabled = true;
+    button.textContent = TEXT[lang].sending;
+    // Google sends no readable reply to other sites, so only a network failure can be detected here.
+    fetch(FORM_URL, { method: "POST", mode: "no-cors", body: body })
+      .then(function () { done("sent"); })
+      .catch(function () { done("failed"); });
+  };
+
+  document.getElementById("t-language").value = lang === "ro" ? "Romana" : "Engleza";
+  window.addEventListener("hashchange", render);
   render();
 </script>
 </body>
