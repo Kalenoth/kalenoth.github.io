@@ -1,7 +1,43 @@
 {
   "updates": [
     {
+      "date": "2026-11-01",
+      "version": "0.1.27",
+      "title": {
+        "ro": "Clasele: Războinic, Vânător și Mag",
+        "en": "The classes: Warrior, Hunter and Mage"
+      },
+      "items": [
+        {
+          "type": "new",
+          "ro": "De la nivelul 5 alegi clasa la altarul de lângă casă. Războinicul are mai multă viață și armură și primește gratuit sabie și scut de lemn.",
+          "en": "From level 5, choose your class at the altar next to the house. The Warrior has more health and armor and gets a free wooden sword and shield."
+        },
+        {
+          "type": "new",
+          "ro": "Vânătorul trage cu arcul de la 8 metri, merge mai repede și lovește mai des critic. Primește gratuit un arc de lemn; arcurile de cupru și de fier se fac la forjă.",
+          "en": "The Hunter shoots from 8 meters, moves faster and lands more critical hits. They get a free wooden bow; copper and iron bows are made at the forge."
+        },
+        {
+          "type": "new",
+          "ro": "Magul lovește cu mingi de foc de la 6 metri, cu daune mult mai mari, dar are mai puțină viață și armură. Primește gratuit un baston de pin negru; cele de cupru și de fier se fac la forjă.",
+          "en": "The Mage strikes with fireballs from 6 meters, for much higher damage, but has less health and armor. They get a free black pine staff; copper and iron staffs are made at the forge."
+        },
+        {
+          "type": "new",
+          "ro": "Două skill-uri pentru fiecare clasă, cu butoane proprii: Lovitură grea și Rezistență la Războinic, Săgeată puternică și Pas înapoi la Vânător, Minge de foc și Explozie la Mag. Le găsești descrise în inventar, la Skill-uri.",
+          "en": "Two skills for each class, with their own buttons: Heavy Strike and Endurance for the Warrior, Power Shot and Step Back for the Hunter, Fireball and Explosion for the Mage. Their descriptions are in the inventory, under Skills."
+        },
+        {
+          "type": "new",
+          "ro": "Scuturile se văd acum pe braț și se fac la banc și la forjă: lemn, cupru și fier.",
+          "en": "Shields now show on the arm and are made at the workbench and the forge: wood, copper and iron."
+        }
+      ]
+    },
+    {
       "date": "2026-10-30",
+      "version": "0.1.22",
       "title": {
         "ro": "Mina Gnomilor",
         "en": "The Gnome Mine"
@@ -51,6 +87,7 @@
     },
     {
       "date": "2026-10-18",
+      "version": "0.1.11",
       "title": {
         "ro": "Capitolul 2 prinde viață",
         "en": "Chapter 2 comes to life"
@@ -105,6 +142,7 @@
     },
     {
       "date": "2026-10-02",
+      "version": "0.1.1",
       "title": {
         "ro": "Pregătiri pentru telefon",
         "en": "Getting ready for phones"
@@ -139,6 +177,7 @@
     },
     {
       "date": "2026-10-01",
+      "version": "0.1.0",
       "title": {
         "ro": "Munții Cenușii și limba engleză",
         "en": "The Ashen Mountains and English"
@@ -188,6 +227,7 @@
     },
     {
       "date": "2026-09-30",
+      "version": "0.1.0",
       "title": {
         "ro": "Povestea Văii Verzi",
         "en": "The story of the Green Valley"
@@ -237,6 +277,7 @@
     },
     {
       "date": "2026-09-29",
+      "version": "0.1.0",
       "title": {
         "ro": "Primele questuri",
         "en": "The first quests"
@@ -271,6 +312,7 @@
     },
     {
       "date": "2026-09-28",
+      "version": "0.1.0",
       "title": {
         "ro": "Ecran pe lat",
         "en": "Landscape mode"
@@ -295,6 +337,7 @@
     },
     {
       "date": "2026-09-27",
+      "version": "0.1.0",
       "title": {
         "ro": "Casa, nivel cu nivel",
         "en": "The house, level by level"
@@ -309,6 +352,7 @@
     },
     {
       "date": "2026-09-19",
+      "version": "0.1.0",
       "title": {
         "ro": "Începuturile",
         "en": "The beginning"
