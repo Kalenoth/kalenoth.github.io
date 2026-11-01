@@ -195,7 +195,6 @@
     </article>
   </main>
 </div>
-<script src="updates.js"></script>
 <script>
   var TEXT = {
     ro: {
@@ -227,6 +226,9 @@
   var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSedvwPqaAdnxoCcv8z-BupDbZDQs0aPuJ-N9VBoT8dD9r0zBg/formResponse";
   var FORM_CONSENT = "Sunt de acord ca adresa mea să fie folosită pentru acest test. / I agree to my address being used for this test.";
   var statusKey = null;
+  // The same file the game downloads for its "Noutăți" page.
+  var updates = [];
+  var loaded = false;
   var FILTERS = ["all", "new", "better", "fix"];
   var lang = "ro";
   var filter = "all";
@@ -287,7 +289,7 @@
     var log = document.getElementById("log");
     log.textContent = "";
     var shown = 0;
-    window.KALENOTH_UPDATES.forEach(function (update) {
+    updates.forEach(function (update) {
       var items = update.items.filter(function (i) { return filter === "all" || i.type === filter; });
       if (!items.length) return;
       shown++;
@@ -307,7 +309,7 @@
       article.appendChild(list);
       log.appendChild(article);
     });
-    if (!shown) log.appendChild(el("p", "empty", t.empty));
+    if (!shown && loaded) log.appendChild(el("p", "empty", t.empty));
   }
 
   document.querySelectorAll("[data-lang]").forEach(function (b) {
@@ -360,6 +362,11 @@
   document.getElementById("t-language").value = lang === "ro" ? "Romana" : "Engleza";
   window.addEventListener("hashchange", render);
   render();
+  fetch("updates.json")
+    .then(function (response) { return response.json(); })
+    .then(function (data) { updates = data.updates; })
+    .catch(function () {})
+    .then(function () { loaded = true; render(); });
 </script>
 </body>
 </html>
