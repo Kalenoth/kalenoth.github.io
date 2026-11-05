@@ -1,6 +1,76 @@
 {
   "updates": [
     {
+      "date": "2026-11-03",
+      "version": "0.1.28",
+      "title": {
+        "ro": "Turnul Infinitului",
+        "en": "The Tower of Infinity"
+      },
+      "items": [
+        {
+          "type": "better",
+          "ro": "Drumul spre Regele goblinilor e luminat de torțe, iar în arenă ard braziere; pe marginea drumurilor sunt pietre și țăruși, iar pe jos iarbă uscată și oase vechi.",
+          "en": "Torches light the road to the Goblin King and braziers burn in his arena; stones and stakes line the roads, with dry grass and old bones on the ground."
+        },
+        {
+          "type": "better",
+          "ro": "Satul goblinilor prinde viață: focuri cu flacără și scântei, fum din forjă și din colibe, cenușă purtată de vânt și culori mai calde.",
+          "en": "The goblin village comes alive: fires with flames and sparks, smoke from the forge and the huts, ash on the wind and warmer colours."
+        },
+        {
+          "type": "better",
+          "ro": "Munții Cenușii arată mai bine: stânci colțuroase pe pereții munților, cenușă pe platourile înalte, un soare cald de după-amiază și o negură rece peste creste.",
+          "en": "The Grey Mountains look better: jagged crags on the mountain walls, ash on the high ledges, a warm afternoon sun and a cold haze over the ridges."
+        },
+        {
+          "type": "better",
+          "ro": "În Munții Cenușii, drumul de la poartă duce acum drept prin satul goblinilor până la arena regelui; sala șefului s-a mutat în partea de vest a satului.",
+          "en": "In the Grey Mountains, the road from the gate now leads straight through the goblin village to the king's arena; the chieftain's hall moved to the west side of the village."
+        },
+        {
+          "type": "new",
+          "ro": "După ce învingi Regele goblinilor (și ai cel puțin nivelul 10), poarta te duce în Turnul Infinitului: etaje fără sfârșit, fiecare mai greu decât cel dinainte.",
+          "en": "Once you defeat the Goblin King (and reach at least level 10), the gate takes you to the Tower of Infinity: endless floors, each harder than the last."
+        },
+        {
+          "type": "new",
+          "ro": "La fiecare 5 etaje te așteaptă un boss: Lupul Alfa, Ursul, Regele goblinilor și alții. Prima victorie asupra fiecăruia dă smaralde.",
+          "en": "A boss waits every 5 floors: the Alpha Wolf, the Bear, the Goblin King and more. The first victory over each one gives emeralds."
+        },
+        {
+          "type": "new",
+          "ro": "După fiecare etaj primești monede și o parte din viață înapoi. Dacă mori, nu pierzi XP, iar următoarea urcare poate începe deasupra ultimului boss învins.",
+          "en": "After every floor you get coins and some of your health back. Dying costs no XP, and your next climb can start above the last boss you beat."
+        },
+        {
+          "type": "better",
+          "ro": "Valea Verde arată mai bine: ceață ușoară spre munți, cer nou, iarbă mai caldă, cu pete, drumuri care se pierd în iarbă și munți de piatră în locul celor cenușii.",
+          "en": "The Green Valley looks better: light mist towards the mountains, a new sky, warmer grass with patches, paths that fade into the grass and stone mountains instead of the grey ones."
+        },
+        {
+          "type": "better",
+          "ro": "Lacul din vale are apă nouă, cu valuri și mal care se pierde în apă, pietre, stuf, o salcie plângătoare și un mic ponton. Munții au vârfuri mai line și mușchi verde la poale.",
+          "en": "The valley lake has new water, with small waves and a shore that fades into it, stones, reeds, a weeping willow and a small dock. The mountains have softer peaks and green moss at their feet."
+        },
+        {
+          "type": "better",
+          "ro": "Valea prinde viață: lumină caldă de după-amiază, fum din hornul casei, frunze care cad din stejari, fluturi lângă lac și casă. În locul muzicii se aud vântul, păsările și apa lacului.",
+          "en": "The valley comes alive: warm afternoon light, smoke from the house chimney, leaves falling from the oaks, butterflies by the lake and the house. Instead of the music you hear the wind, the birds and the lake."
+        },
+        {
+          "type": "better",
+          "ro": "Valea Verde e mai plină: crânguri noi de brazi și stejari (se pot tăia), tufe, flori și pietre pe pajiști, bolovani la poalele munților, o tabără de vânători părăsită lângă drumul de la intrare și ruinele unui zid vechi.",
+          "en": "The Green Valley is fuller: new groves of firs and oaks (they can be chopped), bushes, flowers and stones on the meadows, boulders at the foot of the mountains, an abandoned hunters camp by the road from the entrance and the ruins of an old wall."
+        },
+        {
+          "type": "better",
+          "ro": "Armura de fier are în sfârșit aspectul ei, pentru erou și eroină: cuirasă și spaulieri din plăci, cască cu apărătoare de nas și blană, genunchiere, brățări și cizme ferecate.",
+          "en": "The iron armour finally has its own look, for both hero and heroine: a plate cuirass and pauldrons, a helmet with a nose guard and fur, knee guards, bracers and iron-bound boots."
+        }
+      ]
+    },
+    {
       "date": "2026-11-01",
       "version": "0.1.27",
       "title": {
