@@ -362,7 +362,7 @@
   document.getElementById("t-language").value = lang === "ro" ? "Romana" : "Engleza";
   window.addEventListener("hashchange", render);
   render();
-  fetch("updates.json")
+  fetch("updates.json", { cache: "no-cache" })
     .then(function (response) { return response.json(); })
     .then(function (data) { updates = data.updates; })
     .catch(function () {})

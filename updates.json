@@ -9,6 +9,11 @@
       },
       "items": [
         {
+          "type": "fix",
+          "ro": "Bounty-urile luate de la panou se termină acum și în alte hărți (de exemplu Regele goblinilor în Munții Cenușii). Progresul lor apare și în fereastra de questuri, iar recompensa se ia tot de la panoul de acasă.",
+          "en": "Bounties taken at the board now complete on other maps too (for example the Goblin King in the Grey Mountains). Their progress also shows in the quest window, and the reward is still claimed at the board back home."
+        },
+        {
           "type": "better",
           "ro": "Drumul spre Regele goblinilor e luminat de torțe, iar în arenă ard braziere; pe marginea drumurilor sunt pietre și țăruși, iar pe jos iarbă uscată și oase vechi.",
           "en": "Torches light the road to the Goblin King and braziers burn in his arena; stones and stakes line the roads, with dry grass and old bones on the ground."
