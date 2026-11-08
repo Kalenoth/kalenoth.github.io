@@ -1,6 +1,41 @@
 {
   "updates": [
     {
+      "date": "2026-11-05",
+      "version": "0.1.29",
+      "title": {
+        "ro": "Comoara Regelui goblinilor",
+        "en": "The Goblin King's treasure"
+      },
+      "items": [
+        {
+          "type": "new",
+          "ro": "Știi mereu ce ai de făcut: sub bara de XP apare questul curent și progresul lui, iar o săgeată aurie lângă erou arată spre mobul, copacul, piatra, casa, stația sau poarta de care ai nevoie. În pagina de questuri alegi ce quest urmărești (Urmărește / Urmărit), inclusiv cele zilnice, iar săgeata se poate opri și din Setări.",
+          "en": "You always know what to do next: the current quest and its progress show under the XP bar, and a golden arrow next to the hero points at the mob, tree, rock, house, station or gate you need. On the quest page you choose which quest to follow (Track / Tracked), daily ones included, and the arrow can also be turned off in Settings."
+        },
+        {
+          "type": "new",
+          "ro": "Jocul are acum sunete: pașii eroului pe iarbă, pietriș și piatră, loviturile de topor, târnăcop și armă, copacii care cad, pietrele care se sparg, mobii care atacă și mor, săgețile și vrăjile, monedele și obiectele culese, butoanele și paginile, questurile terminate, construcția casei, craftul și cercetarea.",
+          "en": "The game now has sound: the hero's footsteps on grass, gravel and stone, axe, pickaxe and weapon hits, falling trees, breaking rocks, mobs attacking and dying, arrows and spells, coins and items picked up, buttons and pages, finished quests, house building, crafting and research."
+        },
+        {
+          "type": "better",
+          "ro": "Armele și uneltele stau corect în mâna eroului și a eroinei: săbiile, bâta, satârul, toiegele, topoarele și târnăcoapele.",
+          "en": "Weapons and tools sit properly in the hero's and heroine's hand: swords, club, cleaver, staffs, axes and pickaxes."
+        },
+        {
+          "type": "new",
+          "ro": "Regele goblinilor lasă o armă unică la prima victorie, potrivită clasei tale: Satârul Regelui (Războinic), Arcul Regelui (Vânător) sau Toiagul Regelui (Mag), într-un sac portocaliu cu bonusuri fixe.",
+          "en": "The Goblin King drops a unique weapon the first time you beat him, matching your class: the King's Cleaver (Warrior), the King's Bow (Hunter) or the King's Staff (Mage), in an orange sack with fixed bonuses."
+        },
+        {
+          "type": "better",
+          "ro": "Goblinii lasă acum resurse: hoții lemn și piele, stăpânii de fiare piele, paznicii fier, iar regele lingouri de fier, piele și poțiuni. Pielea pentru armura de fier se găsește mai ușor.",
+          "en": "Goblins now drop resources: scavengers wood and leather, beastmasters leather, guards iron, and the king iron ingots, leather and potions. Leather for the iron armour is easier to find."
+        }
+      ]
+    },
+    {
       "date": "2026-11-03",
       "version": "0.1.28",
       "title": {
