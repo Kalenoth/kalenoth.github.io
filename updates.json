@@ -1,6 +1,96 @@
 {
   "updates": [
     {
+      "date": "2026-11-09",
+      "version": "0.1.30",
+      "title": {
+        "ro": "Echipament pe nivel",
+        "en": "Gear by level"
+      },
+      "items": [
+        {
+          "type": "new",
+          "ro": "Questuri noi în Mina Gnomilor, după Regele goblinilor: gnomii mineri, fierarii, Cavalerul de cristal și Maistrul minei. Arma și coiful de fier vin după ele.",
+          "en": "New quests in the Gnome Mine after the Goblin King: the gnome miners, the smiths, the Crystal Knight and the Mine Foreman. The iron weapon and helm come after them."
+        },
+        {
+          "type": "new",
+          "ro": "Capitolul 3 se deschide: de la nivelul 20, după coiful de fier, poarta te duce pe Podișul Valdoriei. Te așteaptă 13 questuri noi, cu jefuitori, golemi de piatră, aur, cedru, marmură și Căpetenia jefuitorilor.",
+          "en": "Chapter 3 opens: from level 20, after the iron helm, the gate takes you to the Valdoria Plateau. 13 new quests await, with raiders, stone golems, gold, cedar, marble and the Raider Chief."
+        },
+        {
+          "type": "better",
+          "ro": "Questurile zilnice țin acum de capitolul în care ești: după ursul din vale primești zilnice din munți și din mină, iar după coiful de fier zilnice de pe podiș. Bounty-uri noi: Maistrul minei și Căpetenia jefuitorilor.",
+          "en": "Daily quests now follow the chapter you are in: after the valley bear you get dailies from the mountains and the mine, and after the iron helm dailies from the plateau. New bounties: the Mine Foreman and the Raider Chief."
+        },
+        {
+          "type": "better",
+          "ro": "Joc reechilibrat pe capitole: Valea Verde te duce până la nivelul 10, cu armura de piele, iar Munții Cenușii până la nivelul 20, cu armura de cupru. Questurile și mobii dau mai mult XP, iar animalele, goblinii și gnomii au viață și atac noi. Poarta spre munți se deschide acum la nivelul 10.",
+          "en": "The game is rebalanced by chapter: the Green Valley takes you to level 10 in leather armour, and the Ashen Mountains to level 20 in copper armour. Quests and mobs give more XP, and the animals, goblins and gnomes have new health and attack. The gate to the mountains now opens at level 10."
+        },
+        {
+          "type": "new",
+          "ro": "Armele și scuturile au un bonus nou: armele pot avea Furt de viață (o parte din lovitura dată unui mob te vindecă), iar scuturile Blocaj (șansa ca o lovitură să nu-ți facă nimic). Piesele portocalii au acum toate 4 bonusuri.",
+          "en": "Weapons and shields have a new bonus: weapons can roll Life steal (part of every hit on a mob heals you) and shields Block (a chance that a hit does nothing). Orange pieces now all have 4 bonuses."
+        },
+        {
+          "type": "better",
+          "ro": "Cât timp casa se construiește, apare o schelă de lemn în jurul lucrării și se ridică praf la fiecare ciocănit; la final schela se strânge într-un nor de praf.",
+          "en": "While the house is being built, a wooden scaffold stands around the work and dust rises with every hammering; when it is done the scaffold comes down in a cloud of dust."
+        },
+        {
+          "type": "better",
+          "ro": "Obiectele căzute pe jos se rotesc și plutesc ușor, ca să le vezi mai ușor în iarbă.",
+          "en": "Items dropped on the ground now spin and float gently, so they are easier to spot in the grass."
+        },
+        {
+          "type": "better",
+          "ro": "Copacii și pietrele din Valea Verde și din Munții Cenușii nu mai cresc la loc exact în același punct: reapar undeva prin apropiere, așa că trebuie să te miști puțin ca să le găsești.",
+          "en": "Trees and rocks in the Green Valley and the Ashen Mountains no longer grow back in exactly the same spot: they come back somewhere nearby, so you have to move around a little to find them."
+        },
+        {
+          "type": "new",
+          "ro": "Armura de aur se face acum la forjă: cască, platoșă, brățări, pantaloni și cizme, din lingouri de aur, piele și rubine de mină. Rubinele le pică Maistrul minei din Mina Gnomilor (și, mai rar, Cavalerii de cristal); Maistrul reapare acum la 5 minute. Are model nou atât pe erou, cât și pe eroină: plăci aurii, cămașă roșie, un medalion-soare cu gemă pe piept și geme roșii pe cască, genunchi și brățări. O poți purta de la nivelul 30.",
+          "en": "Gold armour can now be made at the forge: helm, breastplate, bracers, trousers and boots, from gold ingots, leather and mine rubies. The Mine Foreman in the Gnome Mine drops the rubies (and, more rarely, the Crystal Knights); the Foreman now comes back after 5 minutes. It has a new look on both the hero and the heroine: gold plates, a red shirt, a sun medallion with a gem on the chest and red gems on the helm, knees and bracers. You can wear it from level 30."
+        },
+        {
+          "type": "better",
+          "ro": "Bancul de lucru și forja au acum tab-uri pe tier-uri (plus „Materiale” / „Poțiuni”), așa că nu mai derulezi o listă lungă. Piesele de armură au iconițe noi, cu modelele noi de pe erou.",
+          "en": "The workbench and the forge now have tabs by tier (plus \"Materials\" / \"Potions\"), so there is no long list to scroll. Armour pieces have new icons showing the new models the hero wears."
+        },
+        {
+          "type": "better",
+          "ro": "Porțile de călătorie (din Valea Verde, Munții Cenușii și Podișul Valdoriei) au acum un portal albastru în arc: apare când se deschid ușile și dispare când se închid la loc.",
+          "en": "The travel gates (in the Green Valley, the Ashen Mountains and the Valdoria Plateau) now have a blue portal in their arch: it appears as the doors open and fades away when they close again."
+        },
+        {
+          "type": "new",
+          "ro": "Echipamentul cere acum un nivel minim: pielea se poartă de la nivelul 1, cuprul de la nivelul 10, fierul de la 20 și aurul de la 30. Se aplică armurii, armelor și scuturilor; nivelul necesar apare la detaliile piesei (cu roșu dacă nu-l ai încă) și la craft. Armele unice ale Regelui goblinilor nu au limită, iar piesele pe care le porți deja rămân pe tine.",
+          "en": "Gear now needs a minimum level: leather from level 1, copper from level 10, iron from 20 and gold from 30. This applies to armour, weapons and shields; the required level shows in the piece's details (in red if you are not there yet) and when crafting. The Goblin King's unique weapons have no limit, and pieces you already wear stay on."
+        },
+        {
+          "type": "better",
+          "ro": "Questurile „Arma de fier” și „Coiful de fier” vin acum după Regele goblinilor, de la nivelul 20, când poți purta fierul. „Arma de fier” cere arma clasei tale: sabia, arcul sau toiagul.",
+          "en": "The \"Iron Weapon\" and \"Iron Helm\" quests now come after the Goblin King, from level 20, when you can wear iron. \"Iron Weapon\" asks for your class's weapon: the sword, the bow or the staff."
+        },
+        {
+          "type": "better",
+          "ro": "Intrarea în Mina Gnomilor e acum un portal albastru: pășești în el și ajungi în mină. Portalul se aprinde după ce învingi Regele goblinilor; până atunci e stins și nu te lasă să treci.",
+          "en": "The Gnome Mine entrance is now a blue portal: step into it to reach the mine. The portal lights up once you defeat the Goblin King; until then it is dim and won't let you through."
+        },
+        {
+          "type": "better",
+          "ro": "Monedele cad acum în cel mult 4–5 grămezi, nu câte una: aceeași sumă, mai puține de adunat. O grămadă cu mai mulți bani e și mai mare.",
+          "en": "Coins now drop in at most 4–5 piles instead of one by one: the same amount, fewer to pick up. A pile worth more is also bigger."
+        },
+        {
+          "type": "fix",
+          "ro": "Lingourile de fier și de cupru arată acum ca niște lingouri când cad pe jos, nu ca o bilă.",
+          "en": "Iron and copper ingots now look like ingots when they drop, not like a ball."
+        }
+      ]
+    },
+    {
       "date": "2026-11-05",
       "version": "0.1.29",
       "title": {
