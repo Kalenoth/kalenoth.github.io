@@ -1,6 +1,36 @@
 {
   "updates": [
     {
+      "date": "2026-11-11",
+      "version": "0.1.31",
+      "title": {
+        "ro": "Pachetul de început pe clasă",
+        "en": "Starter pack by class"
+      },
+      "items": [
+        {
+          "type": "better",
+          "ro": "Pachetul de început apare acum la nivelul 5, după ce îți alegi clasa, și rămâne 48 de ore. Arma bonus e pe măsura clasei: sabie pentru Războinic, arc pentru Vânător, toiag pentru Mag.",
+          "en": "The starter pack now shows up at level 5, after you choose your class, and stays for 48 hours. The bonus weapon fits your class: a sword for the Warrior, a bow for the Hunter, a staff for the Mage."
+        },
+        {
+          "type": "new",
+          "ro": "Altarul de lângă casă e acum un șantier. De la nivelul 5 îl construiești cu lemn de brad, piatră și minereu de cupru, apoi îți alegi clasa la el.",
+          "en": "The altar next to the house is now a building site. From level 5 you build it with fir wood, stone and copper ore, then choose your class there."
+        },
+        {
+          "type": "better",
+          "ro": "Fiecare nivel al casei se construiește acum cu schelă, iar șantierul scoate praf și fum cât timp lucrezi la el.",
+          "en": "Every house level now goes up behind scaffolding, and the site gives off dust and smoke while the work goes on."
+        },
+        {
+          "type": "new",
+          "ro": "Toate pietrele și stâncile din Valea Verde se pot sparge cu târnăcopul. Pietricelele se sparg repede, stâncile mari țin mult, dar dau de câteva ori mai multă piatră și XP.",
+          "en": "Every stone and rock in Green Valley can now be mined with the pickaxe. Pebbles break fast; big rocks take long but give several times more stone and XP."
+        }
+      ]
+    },
+    {
       "date": "2026-11-09",
       "version": "0.1.30",
       "title": {
