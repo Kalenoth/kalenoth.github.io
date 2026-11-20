@@ -1,6 +1,150 @@
 {
   "updates": [
     {
+      "date": "2026-11-20",
+      "title": {
+        "ro": "Videoclip nou de prezentare",
+        "en": "New showcase video"
+      },
+      "items": [
+        {
+          "type": "new",
+          "ro": "Un videoclip nou arată jocul: aduni piatră și lemn, lupți cu mistrețul și cu goblinii, casa crește de la nivelul 1 la 19, făurești armura de la piele la aur și cobori în Mina Gnomilor până la boss. Urmărește-l aici: https://www.youtube.com/watch?v=xQGswkzx0C0",
+          "en": "A new video shows the game: gather stone and wood, fight the boar and the goblins, watch the house grow from level 1 to 19, forge armour from leather to gold and go down the Gnome Mine to its boss. Watch it here: https://www.youtube.com/watch?v=xQGswkzx0C0"
+        },
+        {
+          "type": "new",
+          "ro": "Caut testeri: intră pe Discord, joacă înaintea tuturor și adu-ți ideile în joc. https://discord.gg/fKjvwcMt6H",
+          "en": "Looking for testers: join the Discord, play before everyone else and put your ideas into the game. https://discord.gg/fKjvwcMt6H"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "version": "0.1.35",
+      "title": {
+        "ro": "Boși mai puternici, poțiuni pe Podiș",
+        "en": "Stronger bosses, potions on the Plateau"
+      },
+      "items": [
+        {
+          "type": "better",
+          "ro": "Boșii lovesc mai tare: Ursul, Regele goblinilor, Maistrul minei și Căpetenia jefuitorilor sunt gândiți acum pentru o luptă în care bei o poțiune. Ia câteva cu tine înainte să-i provoci.",
+          "en": "Bosses hit harder: the Bear, the Goblin King, the Mine Foreman and the Raider Chief are now made for a fight where you drink a potion. Take a few with you before you challenge them."
+        },
+        {
+          "type": "better",
+          "ro": "Regele goblinilor și Căpetenia jefuitorilor reapar după 5 minute, ca ceilalți boși (înainte după un minut).",
+          "en": "The Goblin King and the Raider Chief now come back after 5 minutes, like the other bosses (one minute before)."
+        },
+        {
+          "type": "better",
+          "ro": "Boșii dau o poțiune de viață cu 50% șansă (înainte 1–2 de fiecare dată). Pe Podișul Valdoriei golemii și jefuitorii pot lăsa acum și ei poțiuni.",
+          "en": "Bosses drop a health potion with a 50% chance (1–2 every time before). On the Valdoria Plateau the golems and raiders can now drop potions too."
+        },
+        {
+          "type": "better",
+          "ro": "Bonusurile pieselor de echipament cresc acum cu materialul: atacul, armura și viața în plus sunt mai mici pe piele și cupru și mai mari pe fier și aur. Piesele pe care le ai deja rămân la fel.",
+          "en": "Equipment bonuses now grow with the material: the extra attack, armour and health are smaller on leather and copper and bigger on iron and gold. The pieces you already have stay the same."
+        },
+        {
+          "type": "better",
+          "ro": "Sacii de armură de la mobi au aceleași șanse ca la creare: piesele albastre, mov și portocalii sunt mai rare, iar boșii dau tot mai des piese bune.",
+          "en": "Armour sacks from mobs now have the same odds as crafting: blue, purple and orange pieces are rarer, and bosses still give good pieces more often."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "version": "0.1.34",
+      "title": {
+        "ro": "Eveniment de weekend",
+        "en": "Weekend event"
+      },
+      "items": [
+        {
+          "type": "new",
+          "ro": "Eveniment nou de weekend, „Îmbunătățirea materialelor” (în Evenimente): de vineri de la ora 16 până luni la 00:00 schimbi 2 materiale pe 1 de nivelul următor (brad → stejar → pin negru → cedru, piatră → marmură, minereuri și lingouri cupru → fier → aur). Fiecare bucată dă puncte după nivel (1, 2 sau 3), iar pragurile dau recompense: 100 de puncte un sac de materiale, 200 doi saci, 500 25 de smaragde, 1000 50 de smaragde. Primii 10 din clasamentul weekendului primesc și monede: locul 1 1000, locurile 2-3 500, locurile 4-10 100. Evenimentul „Vocea eroilor” s-a încheiat.",
+          "en": "New weekend event, “Material Upgrade” (in Events): from Friday 16:00 until Monday 00:00 you trade 2 materials for 1 of the next level (fir → oak → black pine → cedar, stone → marble, ores and ingots copper → iron → gold). Every piece gives points by level (1, 2 or 3), and milestones pay rewards: 100 points a material sack, 200 two sacks, 500 25 emeralds, 1000 50 emeralds. The top 10 of the weekend ranking also get coins: 1st place 1000, 2nd-3rd 500, 4th-10th 100. The “Voice of the Heroes” event has ended."
+        },
+        {
+          "type": "new",
+          "ro": "Skill-urile de daune au acum niveluri: pe pagina Skill-uri din inventar le crești până la nivelul 10, cu XP din nivelul curent (nu pierzi niciodată un nivel) și monede. Fiecare nivel dă +5% daune skill-ului.",
+          "en": "Damage skills now have levels: on the Skills page in the inventory you raise them up to level 10 with XP from your current level (you never lose a level) and coins. Every level gives the skill +5% damage."
+        },
+        {
+          "type": "better",
+          "ro": "Armura cade mai des de la mobi: 10% la un mob, 20% la un boss, iar rarele, mov și portocalii apar mult mai des (la boss și mai des).",
+          "en": "Mobs drop armour more often: 10% from a mob, 20% from a boss, and rare, purple and orange pieces show up much more often (even more from bosses)."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "version": "0.1.33",
+      "title": {
+        "ro": "Harta ținuturilor",
+        "en": "Map of the Realms"
+      },
+      "items": [
+        {
+          "type": "new",
+          "ro": "Muzică: meniul de start, Valea Verde, Mina Gnomilor și arena au acum muzica lor, care trece lin de la o hartă la alta. Volumul muzicii se reglează separat, din Setări.",
+          "en": "Music: the start menu, the Green Valley, the Gnome Mine and the arena now have their own music, fading smoothly from one map to the next. The music volume has its own slider in Settings."
+        },
+        {
+          "type": "new",
+          "ro": "Loviturile se simt mai bine: la lovituri critice și la lovitura de grație camera tresare, iar mobii sunt împinși puțin înapoi (boșii nu se clintesc). Și o lovitură grea primită de erou zguduie camera.",
+          "en": "Hits feel stronger: critical hits and killing blows jolt the camera, and mobs are knocked back a little (bosses stand firm). A heavy hit on the hero shakes the camera too."
+        },
+        {
+          "type": "new",
+          "ro": "Orice mob are acum o șansă mică să lase un sac cu o piesă de armură, de tierul hărții: piele în Valea Verde (cupru de la tigru și urs), fier în Munții Cenușii și în mină, aur pe Podișul Valdoriei. Sacul stă într-un stâlp de lumină în culoarea rarității, iar piesele epice și legendare se anunță cu sunet și mesaj. Dropurile rare, ca poțiunile și rubinele, strălucesc și ele, ca să nu le ratezi.",
+          "en": "Every mob now has a small chance to drop a sack with an armor piece of the map's tier: leather in the Green Valley (copper from the tiger and the bear), iron in the Ashen Mountains and the mine, gold on the Valdoria Plateau. The sack stands in a pillar of light in its rarity's colour, and epic and legendary pieces announce themselves with a sound and a message. Rare drops such as potions and rubies glow too, so you don't miss them."
+        },
+        {
+          "type": "better",
+          "ro": "Altarul nu mai apare pe loc: după ce plătești materialele, constructorii lucrează un minut. Din schele iese fum și praf, se aud ciocanele, iar pagina altarului arată cât mai durează. Construcția merge mai departe și dacă închizi jocul.",
+          "en": "The altar no longer appears instantly: once you pay the materials, the builders work for a minute. Smoke and dust rise from the scaffolding, hammers ring out, and the altar page shows how long is left. The building goes on even if you close the game."
+        },
+        {
+          "type": "new",
+          "ro": "Magazinul are acum o secțiune nouă, Resurse: poți cumpăra pe monede orice resursă din joc, de la lemn și piatră până la lingouri de aur și rubine de mină. Fiecare pachet are un stoc zilnic.",
+          "en": "The Shop now has a new Resources section: buy any resource in the game for coins, from wood and stone up to gold ingots and mine rubies. Each pack has a daily stock."
+        },
+        {
+          "type": "better",
+          "ro": "Turnul Infinitului, arena și tabla campionilor au acum un buton care plutește deasupra lor, ca la altar: când ajungi lângă ele, atinge butonul ca să intri. Nu mai intri din greșeală doar trecând pe lângă.",
+          "en": "The Tower of Infinity, the arena and the board of champions now have a button floating above them, like the altar: when you get close, tap it to go in. No more walking in by accident just by passing by."
+        },
+        {
+          "type": "new",
+          "ro": "Poarta deschide acum o hartă a ținuturilor, cu fiecare loc văzut de sus exact cum e în joc: Valea Verde, Munții Cenușii și Podișul Valdoriei, legate prin drum. Atinge un loc ca să vezi ce te așteaptă acolo și ce îți mai trebuie ca să ajungi, apoi pornește la drum.",
+          "en": "The gate now opens a map of the realms, with every place seen from above just as it is in the game: the Green Valley, the Ashen Mountains and the Valdoria Plateau, linked by the road. Tap a place to see what awaits there and what you still need to reach it, then set off."
+        },
+        {
+          "type": "new",
+          "ro": "Pe marginea de est a Văii Verzi stau ruinele Turnului Infinitului. De la nivelul 10 le poți reconstrui cu piatră, lemn și cupru, iar turnul se ridică din pământ în fața ta. Rămâne adormit până învingi Regele goblinilor: atunci runele se aprind, cristalul din vârf strălucește și portalul se deschide.",
+          "en": "The ruins of the Tower of Infinity stand on the east edge of the Green Valley. From level 10 you can rebuild them with stone, wood and copper, and the tower rises out of the ground before you. It sleeps until you defeat the Goblin King: then the runes light up, the crystal at the top shines and the portal opens."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "version": "0.1.32",
+      "title": {
+        "ro": "Tăiatul copacilor, mai natural",
+        "en": "More natural tree chopping"
+      },
+      "items": [
+        {
+          "type": "better",
+          "ro": "Eroul ține acum toporul cu ambele mâini: își ia avânt peste umăr, lovește trunchiul în diagonală și apoi revine liniștit. Copacul se scutură exact când toporul îl atinge.",
+          "en": "The hero now holds the axe with both hands: a wind-up over the shoulder, a diagonal blow into the trunk and a calm return. The tree shakes right when the axe lands."
+        }
+      ]
+    },
+    {
       "date": "2026-11-11",
       "version": "0.1.31",
       "title": {
