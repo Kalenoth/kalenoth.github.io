@@ -23,10 +23,15 @@
       "date": "2026-11-19",
       "version": "0.1.34",
       "title": {
-        "ro": "Eveniment de weekend",
-        "en": "Weekend event"
+        "ro": "Tutorial, boși recalibrați, eveniment de weekend",
+        "en": "Tutorial, rebalanced bosses, weekend event"
       },
       "items": [
+        {
+          "type": "new",
+          "ro": "Un tutorial te ghidează în primele minute: mersul, primul topor din RESEARCH, tăiatul copacilor, inventarul, primul quest, casa, mineritul și prima luptă. Pașii vin odată cu questurile, un cerc auriu îți arată ce să apeși, primești 2 poțiuni înainte de lupta cu lupii (cercul arată spre ele când viața scade) și 100 de monede la final. Îl poți sări sau relua din Setări → Joc.",
+          "en": "A tutorial guides you through your first minutes: walking, your first axe from RESEARCH, chopping trees, the inventory, the first quest, the house, mining and the first fight. The steps come along with the quests, a gold ring shows you what to tap, you get 2 potions before the wolf fight (the ring points at them when your health drops) and 100 coins at the end. You can skip it or replay it from Settings → Game."
+        },
         {
           "type": "new",
           "ro": "Atinge un mob ca să-l selectezi, chiar și de departe: primește un cerc pe pământ, apare în bara de țintă de sus, iar atacurile și skill-urile tale merg spre el când ajunge în raza lor. Atinge un loc gol ca să renunți la selecție.",
@@ -49,8 +54,38 @@
         },
         {
           "type": "better",
-          "ro": "Armura cade mai des de la mobi: 10% la un mob, 20% la un boss, iar rarele, mov și portocalii apar mult mai des (la boss și mai des).",
-          "en": "Mobs drop armour more often: 10% from a mob, 20% from a boss, and rare, purple and orange pieces show up much more often (even more from bosses)."
+          "ro": "Armura cade mai des de la mobi: un sac la 10% din mobi și la 20% din boși. Sacii au aceleași șanse ca la creare: piesele albastre, mov și portocalii sunt rare, iar boșii dau mai des piese bune.",
+          "en": "Mobs drop armour more often: a sack from 10% of mobs and 20% of bosses. Sacks have the same odds as crafting: blue, purple and orange pieces are rare, and bosses give good pieces more often."
+        },
+        {
+          "type": "better",
+          "ro": "Setările sunt împărțite pe tab-uri: Afișare, Sunet, Joc și General, ca pagina să fie mai ușor de citit.",
+          "en": "Settings are split into tabs: Display, Sound, Game and General, so the page is easier to read."
+        },
+        {
+          "type": "better",
+          "ro": "Boșii lovesc mai tare: Ursul, Regele goblinilor, Maistrul minei și Căpetenia jefuitorilor sunt gândiți acum pentru o luptă în care bei o poțiune. Ia câteva cu tine înainte să-i provoci.",
+          "en": "Bosses hit harder: the Bear, the Goblin King, the Mine Foreman and the Raider Chief are now made for a fight where you drink a potion. Take a few with you before you challenge them."
+        },
+        {
+          "type": "better",
+          "ro": "Regele goblinilor și Căpetenia jefuitorilor reapar după 5 minute, ca ceilalți boși (înainte după un minut).",
+          "en": "The Goblin King and the Raider Chief now come back after 5 minutes, like the other bosses (one minute before)."
+        },
+        {
+          "type": "better",
+          "ro": "Boșii dau o poțiune de viață cu 50% șansă (înainte 1–2 de fiecare dată). Pe Podișul Valdoriei golemii și jefuitorii pot lăsa acum și ei poțiuni.",
+          "en": "Bosses drop a health potion with a 50% chance (1–2 every time before). On the Valdoria Plateau the golems and raiders can now drop potions too."
+        },
+        {
+          "type": "better",
+          "ro": "Bonusurile pieselor de echipament cresc acum cu materialul: atacul, armura și viața în plus sunt mai mici pe piele și cupru și mai mari pe fier și aur. Piesele pe care le ai deja rămân la fel.",
+          "en": "Equipment bonuses now grow with the material: the extra attack, armour and health are smaller on leather and copper and bigger on iron and gold. The pieces you already have stay the same."
+        },
+        {
+          "type": "fix",
+          "ro": "Câteva texte apăreau în română când jocul era în engleză (detaliile armurii, numele goblinului jefuitor, numele uneltelor).",
+          "en": "A few texts showed in Romanian while the game was in English (armour details, the goblin scavenger's name, tool names)."
         }
       ]
     },
