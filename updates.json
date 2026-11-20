@@ -29,6 +29,16 @@
       "items": [
         {
           "type": "new",
+          "ro": "Atinge un mob ca să-l selectezi, chiar și de departe: primește un cerc pe pământ, apare în bara de țintă de sus, iar atacurile și skill-urile tale merg spre el când ajunge în raza lor. Atinge un loc gol ca să renunți la selecție.",
+          "en": "Tap a mob to select it, even from far away: it gets a ring on the ground, shows in the target bar at the top, and your attacks and skills go for it once it is in range. Tap an empty spot to clear the selection."
+        },
+        {
+          "type": "new",
+          "ro": "Butonul „i” de lângă bara de țintă deschide pagina mobului: tot ce poate lăsa, cu cantitatea și șansa, plus monedele, sacul de armură și premiul unic al boșilor.",
+          "en": "The \"i\" button next to the target bar opens the mob's page: everything it can drop, with the amount and the chance, plus the coins, the armour sack and the bosses' one-time prize."
+        },
+        {
+          "type": "new",
           "ro": "Eveniment nou de weekend, „Îmbunătățirea materialelor” (în Evenimente): de vineri de la ora 16 până luni la 00:00 schimbi 2 materiale pe 1 de nivelul următor (brad → stejar → pin negru → cedru, piatră → marmură, minereuri și lingouri cupru → fier → aur). Fiecare bucată dă puncte după nivel (1, 2 sau 3), iar pragurile dau recompense: 100 de puncte un sac de materiale, 200 doi saci, 500 25 de smaragde, 1000 50 de smaragde. Primii 10 din clasamentul weekendului primesc și monede: locul 1 1000, locurile 2-3 500, locurile 4-10 100. Evenimentul „Vocea eroilor” s-a încheiat.",
           "en": "New weekend event, “Material Upgrade” (in Events): from Friday 16:00 until Monday 00:00 you trade 2 materials for 1 of the next level (fir → oak → black pine → cedar, stone → marble, ores and ingots copper → iron → gold). Every piece gives points by level (1, 2 or 3), and milestones pay rewards: 100 points a material sack, 200 two sacks, 500 25 emeralds, 1000 50 emeralds. The top 10 of the weekend ranking also get coins: 1st place 1000, 2nd-3rd 500, 4th-10th 100. The “Voice of the Heroes” event has ended."
         },
