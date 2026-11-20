@@ -20,41 +20,6 @@
       ]
     },
     {
-      "date": "2026-11-20",
-      "version": "0.1.35",
-      "title": {
-        "ro": "Boși mai puternici, poțiuni pe Podiș",
-        "en": "Stronger bosses, potions on the Plateau"
-      },
-      "items": [
-        {
-          "type": "better",
-          "ro": "Boșii lovesc mai tare: Ursul, Regele goblinilor, Maistrul minei și Căpetenia jefuitorilor sunt gândiți acum pentru o luptă în care bei o poțiune. Ia câteva cu tine înainte să-i provoci.",
-          "en": "Bosses hit harder: the Bear, the Goblin King, the Mine Foreman and the Raider Chief are now made for a fight where you drink a potion. Take a few with you before you challenge them."
-        },
-        {
-          "type": "better",
-          "ro": "Regele goblinilor și Căpetenia jefuitorilor reapar după 5 minute, ca ceilalți boși (înainte după un minut).",
-          "en": "The Goblin King and the Raider Chief now come back after 5 minutes, like the other bosses (one minute before)."
-        },
-        {
-          "type": "better",
-          "ro": "Boșii dau o poțiune de viață cu 50% șansă (înainte 1–2 de fiecare dată). Pe Podișul Valdoriei golemii și jefuitorii pot lăsa acum și ei poțiuni.",
-          "en": "Bosses drop a health potion with a 50% chance (1–2 every time before). On the Valdoria Plateau the golems and raiders can now drop potions too."
-        },
-        {
-          "type": "better",
-          "ro": "Bonusurile pieselor de echipament cresc acum cu materialul: atacul, armura și viața în plus sunt mai mici pe piele și cupru și mai mari pe fier și aur. Piesele pe care le ai deja rămân la fel.",
-          "en": "Equipment bonuses now grow with the material: the extra attack, armour and health are smaller on leather and copper and bigger on iron and gold. The pieces you already have stay the same."
-        },
-        {
-          "type": "better",
-          "ro": "Sacii de armură de la mobi au aceleași șanse ca la creare: piesele albastre, mov și portocalii sunt mai rare, iar boșii dau tot mai des piese bune.",
-          "en": "Armour sacks from mobs now have the same odds as crafting: blue, purple and orange pieces are rarer, and bosses still give good pieces more often."
-        }
-      ]
-    },
-    {
       "date": "2026-11-19",
       "version": "0.1.34",
       "title": {
