@@ -1,6 +1,161 @@
 {
   "updates": [
     {
+      "date": "2026-11-24",
+      "version": "0.1.37",
+      "title": {
+        "ro": "Sistemul VIP",
+        "en": "The VIP system"
+      },
+      "items": [
+        {
+          "type": "new",
+          "ro": "VIP pe 10 niveluri: fiecare smarald cheltuit în Shop te urcă spre nivelul următor, iar nivelul nu scade niciodată. Primești mai mult XP și mai multe monede, sloturi în plus în rucsac, timp de farm Casual în plus, resurse care cresc la loc mai repede, stoc mai mare în Shop și teleport HOME mai rapid. Fără bonusuri de luptă.",
+          "en": "VIP with 10 levels: every emerald spent in the Shop takes you toward the next level, and the level never goes down. You get more XP and coins, extra backpack slots, extra Casual farm time, resources that regrow faster, more Shop stock and a faster HOME teleport. No combat bonuses."
+        },
+        {
+          "type": "new",
+          "ro": "Cufăr VIP zilnic gratuit și un cadou la fiecare nivel nou, în Shop → VIP. Insigna VIP de sub avatar deschide pagina direct.",
+          "en": "A free daily VIP chest and a gift at every new level, in Shop → VIP. The VIP badge under the avatar opens the page directly."
+        },
+        {
+          "type": "new",
+          "ro": "La nivelul 5 al eroului primești o dată 24 de ore de VIP 4 gratuit.",
+          "en": "At hero level 5 you get 24 hours of free VIP 4, once."
+        },
+        {
+          "type": "new",
+          "ro": "Magazinul VIP: oferte o dată pe săptămână care se deblochează cu nivelul (poțiuni, saci de loot la jumătate de preț, saci rari și epici, monede).",
+          "en": "The VIP shop: once-a-week offers that unlock with your level (potions, half-price loot sacks, rare and epic sacks, coins)."
+        },
+        {
+          "type": "new",
+          "ro": "Quest VIP zilnic: de la VIP 1 ai un al patrulea quest zilnic, cu XP ×1,5, monede ×2 și 5 smaragde.",
+          "en": "Daily VIP quest: from VIP 1 you get a fourth daily quest, with XP ×1.5, coins ×2 and 5 emeralds."
+        },
+        {
+          "type": "new",
+          "ro": "Insigna VIP lângă nume în clasamentul arenei PvP, în fișa jucătorului, la adversarul din arenă și în clasamentul evenimentului: bronz, argint, aur și supremă la VIP 10.",
+          "en": "The VIP badge next to names in the PvP arena ranking, on the player card, on the arena opponent and in the event ranking: bronze, silver, gold and supreme at VIP 10."
+        },
+        {
+          "type": "new",
+          "ro": "Pachete de smaragde în Shop → Magazin, de la 50 la 3500. Prima cumpărare a fiecărui pachet îți dă dublu.",
+          "en": "Emerald packs in Shop → Store, from 50 to 3500. The first purchase of each pack gives you double."
+        },
+        {
+          "type": "better",
+          "ro": "Sacii de loot din Shop arată șansele fiecărei rarități, iar conturul lor are culoarea rarității minime.",
+          "en": "Loot sacks in the Shop show the odds of each rarity, and their outline has the colour of the lowest rarity."
+        },
+        {
+          "type": "fix",
+          "ro": "Bara de viață a țintei și eticheta etajului din turn (sau a duelului din arenă) nu mai apar peste inventar și celelalte pagini.",
+          "en": "The target's health bar and the tower floor label (or the arena duel label) no longer show over the inventory and other pages."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "version": "0.1.35",
+      "title": {
+        "ro": "Stiva de lemne dă și lemn",
+        "en": "The woodpile gives wood too"
+      },
+      "items": [
+        {
+          "type": "new",
+          "ro": "Calendarul de Advent: între 1 și 24 decembrie, în Evenimente → Advent, se deschide în fiecare zi o cutie cu monede, smaragde, poțiuni sau saci de loot. Deschide-o în ziua ei, altfel se pierde; pe 6 și pe 24 cutiile sunt mai mari. O notificare de dimineață îți amintește de cutia zilei.",
+          "en": "Advent calendar: from 1 to 24 December, in Events → Advent, one box opens every day with coins, emeralds, potions or loot sacks. Open it on its day or it is lost; the boxes on the 6th and the 24th are bigger. A morning notification reminds you of each day's box."
+        },
+        {
+          "type": "new",
+          "ro": "Fulgi de nea și Târgul de iarnă: între 1 decembrie și 6 ianuarie, fiecare mob îți dă fulgi de nea (bossii mai mulți), iar copacii și pietrele uneori câte unul. Îi schimbi la bradul împodobit de lângă casă pe poțiuni, monede, smaragde și saci de loot. Fulgii rămași după sărbători devin monede.",
+          "en": "Snowflakes and the Winter fair: from 1 December to 6 January every mob gives you snowflakes (bosses more), and trees and rocks sometimes one. Trade them at the decorated tree by the house for potions, coins, emeralds and loot sacks. Snowflakes left after the holidays turn into coins."
+        },
+        {
+          "type": "new",
+          "ro": "Ninge în Green Valley pe toată durata sărbătorilor de iarnă, iar valea e acoperită de zăpadă; drumurile rămân bătătorite.",
+          "en": "It snows in Green Valley throughout the winter holidays and the valley is covered in snow; the roads stay trodden."
+        },
+        {
+          "type": "new",
+          "ro": "Fashion și costumul de Crăciun: în inventar, taburile „Armură” / „Fashion” aleg ce se vede pe erou. Pe Fashion, piesele purtate se văd peste armură, iar armura rămâne echipată și îți dă în continuare bonusurile. Costumul de Crăciun (5 piese) se cumpără bucată cu bucată cu fulgi de nea la Târgul de iarnă; în fiecare câteva zile ajunge o piesă nouă, așa că pe 20 decembrie îl poți avea întreg.",
+          "en": "Fashion and the Christmas costume: in the inventory, the “Armour” / “Fashion” tabs choose what the hero shows. On Fashion, the worn pieces are drawn over the armour, which stays equipped and keeps giving its bonuses. The Christmas costume (5 pieces) is bought piece by piece with snowflakes at the Winter fair; a new piece arrives every few days, so by 20 December you can have all of it."
+        },
+        {
+          "type": "new",
+          "ro": "Butonul „Ascunde” / „Arată” de lângă coif, în inventar: coiful rămâne purtat și îți dă în continuare armura, doar că nu se mai vede pe erou.",
+          "en": "A “Hide” / “Show” button next to the helmet in the inventory: the helmet stays equipped and still gives you its armour, it just is not drawn on the hero."
+        },
+        {
+          "type": "new",
+          "ro": "Atac manual, acum modul implicit (în Setări → Joc → Atac poți reveni la „Automat”). Eroul nu mai lovește, nu mai taie și nu mai minează singur; apare un buton în colțul din dreapta jos cu arma clasei tale (sabie, arc sau toiag), care devine topor lângă un copac și târnăcop lângă o piatră, dar rămâne armă când ești atacat.",
+          "en": "Manual attack, now the default (Settings → Game → Attack switches back to “Automatic”). The hero no longer strikes, chops or mines by himself; a button appears in the bottom-right corner showing your class weapon (sword, bow or staff), which turns into an axe next to a tree and a pickaxe next to a rock, but stays a weapon while you are under attack."
+        },
+        {
+          "type": "better",
+          "ro": "Un mob care te atacă sau aleargă după tine este selectat automat (inelul de sub el și bara de viață de sus), dacă nu ai ales deja altul.",
+          "en": "A mob that attacks or chases you is now selected automatically (the ring under it and the health bar at the top), unless you already picked another one."
+        },
+        {
+          "type": "better",
+          "ro": "Butoanele de pe ecran sunt rearanjate: poțiunea e acum în stânga jos, lângă joystick, inventarul a urcat sub Events, iar săgețile care ascund coloanele de butoane sunt pe margini, între embleme.",
+          "en": "The on-screen buttons are rearranged: the potion now sits bottom-left next to the joystick, the inventory moved up under Events, and the arrows that hide the button columns sit on the screen edges between the emblems."
+        },
+        {
+          "type": "better",
+          "ro": "Stiva de lemne de la casă (nivelul 4) adună acum, pe lângă 20 de monede, și 3 lemne de brad pe oră (maxim 8 ore), chiar și cu jocul închis.",
+          "en": "The house woodpile (level 4) now gathers 3 fir logs per hour on top of the 20 coins (max 8 hours), even while the game is closed."
+        },
+        {
+          "type": "better",
+          "ro": "Grădina casei (nivelul 5) are acum flori de sunătoare, galbene, în locul plantelor vechi: câte o tufă pentru fiecare floare de cules, așa că vezi din depărtare cât a crescut.",
+          "en": "The house garden (level 5) now grows yellow St John's wort flowers instead of the old plants: one bush for every herb ready to pick, so you can see from afar how much has grown."
+        },
+        {
+          "type": "fix",
+          "ro": "Loviturile cu arcul și toiagul arată acum efectul de lovitură pe mob, nu undeva lângă el.",
+          "en": "Bow and staff hits now show the hit effect on the mob, not somewhere beside it."
+        },
+        {
+          "type": "better",
+          "ro": "Goblinii obișnuiți lasă acum saci cu armură de cupru; armura de fier cade doar de la Goblinul Gardian și de la Regele Goblinilor.",
+          "en": "Regular goblins now drop copper armour sacks; iron armour drops only from the Goblin Guardian and the Goblin King."
+        },
+        {
+          "type": "better",
+          "ro": "Regele Goblinilor este acum un boss adevărat: muzică de boss în luptă, cerc mov când e țintit și șansă dublă (20%) de sac cu armură, cu rarități mai bune.",
+          "en": "The Goblin King is now a true boss: boss music in battle, a purple ring when targeted and double the chance (20%) of an armour sack, with better rarities."
+        },
+        {
+          "type": "better",
+          "ro": "Boșii lovesc mai tare: Ursul, Regele Goblinilor, Maistrul gnomilor și Căpetenia jefuitorilor cer acum echipament bun și o poțiune la nevoie. Regele și Căpetenia revin după 5 minute.",
+          "en": "Bosses hit harder: the Bear, the Goblin King, the Gnome Foreman and the Raider Chief now call for good gear and a potion when needed. The King and the Chief come back after 5 minutes."
+        },
+        {
+          "type": "better",
+          "ro": "Boșii lasă o poțiune de viață în jumătate din lupte, iar mobii de pe Podișul Valdoriei au și ei o șansă mică (3%) să lase una.",
+          "en": "Bosses drop a health potion in half of the fights, and the mobs of the Valdoria Plateau have a small chance (3%) to drop one too."
+        },
+        {
+          "type": "better",
+          "ro": "Bonusurile de armură, damage și viață ale pieselor cresc cu materialul: mai mici pe piele și cupru, întregi pe fier, mai mari pe aur. Sacii lăsați de mobi au acum aceleași șanse de raritate ca făurirea.",
+          "en": "The armour, damage and health bonuses of gear grow with the material: smaller on leather and copper, whole on iron, bigger on gold. Sacks dropped by mobs now have the same rarity odds as crafting."
+        },
+        {
+          "type": "better",
+          "ro": "Turnul Infinitului: etajele peste recordul tău dau XP întreg, iar cele deja trecute doar 10%. Boșii care revin după etajul 30 sunt mai puțin brutali, ca urcarea să nu mai fie un zid brusc.",
+          "en": "Tower of Infinity: floors above your record give full XP, floors you have already cleared only 10%. The bosses that return after floor 30 are less brutal, so the climb no longer hits a sudden wall."
+        },
+        {
+          "type": "better",
+          "ro": "Economia reechilibrată: lupii și mistreții lasă mai rar piele (tigrul și ursul puțin mai puțină), sacii de armură cad mai rar de la mobii obișnuiți (craftul contează din nou), mobii din Munții Cenușii, mină și Podișul Valdoriei dau cu o treime mai puține monede, iar zilnicele din capitolele 2 și 3 cresc mai încet cu nivelul. Nivelurile 11–19 ale casei au acum costuri reale (monede, cedru, marmură, aur).",
+          "en": "Rebalanced economy: wolves and boars drop leather less often (the tiger and the bear a little less), armour sacks drop less often from ordinary mobs (crafting matters again), mobs in the Ashen Mountains, the mine and the Valdoria Plateau give a third fewer coins, and the chapter 2 and 3 dailies grow more slowly with level. House levels 11–19 now have real costs (coins, cedar, marble, gold)."
+        }
+      ]
+    },
+    {
       "date": "2026-11-20",
       "title": {
         "ro": "Videoclip nou de prezentare",
