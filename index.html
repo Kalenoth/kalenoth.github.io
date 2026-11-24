@@ -74,6 +74,7 @@
   .tag.better { color: var(--better); }
   .tag.fix { color: var(--fix); }
   .empty { color: var(--muted-on-bg); }
+  ul.plan li { display: list-item; list-style: "– " outside; margin-left: 18px; }
   [hidden] { display: none !important; }
   .nav { display: flex; gap: 8px; margin-top: 16px; }
   .nav a {
@@ -154,6 +155,7 @@
     <img class="banner" id="banner" width="1024" height="500" alt="">
     <nav class="nav">
       <a href="#" id="nav-updates" data-t="navUpdates"></a>
+      <a href="#roadmap" id="nav-roadmap" data-t="navRoadmap"></a>
       <a href="#tester" id="nav-tester" data-t="navTester"></a>
       <a class="discord" href="https://discord.gg/fKjvwcMt6H" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.6 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.1-.3 13.7.1 18.2a19.9 19.9 0 0 0 6 3l1.3-2.1c-.7-.3-1.4-.6-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2.1a19.8 19.8 0 0 0 6-3c.5-5.2-.8-9.8-3.6-13.8ZM8 15.4c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.6 8 10.6s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Z"/></svg>
@@ -167,6 +169,7 @@
     <div class="filters" id="filters"></div>
     <main id="log"></main>
   </div>
+  <main id="view-roadmap" hidden></main>
   <main id="view-tester" hidden>
     <article>
       <form id="tester-form">
@@ -214,7 +217,8 @@
     ro: {
       page: "Kalenoth – Noutăți", title: "Noutăți", lead: "Tot ce s-a schimbat în joc, de la cea mai nouă actualizare.",
       all: "Toate", "new": "Nou", better: "Îmbunătățit", fix: "Reparat", version: "versiunea", empty: "Nimic de afișat aici.", alt: "Kalenoth, joc RPG pentru telefon",
-      navUpdates: "Noutăți", navTester: "Devino tester", navDiscord: "Intră pe Discord", testerPage: "Kalenoth – Devino tester", testerTitle: "Devino tester",
+      navUpdates: "Noutăți", navTester: "Devino tester", navRoadmap: "Planuri", roadmapPage: "Kalenoth – Planuri", roadmapTitle: "Ce pregătim",
+      roadmapLead: "Ce urmează în actualizările următoare. Planurile se pot schimba; ideile voastre sunt binevenite pe Discord.", roadmapUpdated: "Actualizat la", navDiscord: "Intră pe Discord", testerPage: "Kalenoth – Devino tester", testerTitle: "Devino tester",
       testerLead: "Testul este închis, pe bază de invitație. Completarea formularului nu garantează un loc. Dacă ești acceptat, primești pe e-mail linkul de instalare.",
       email: "Adresa Gmail folosită în Play Store", phone: "Modelul telefonului", language: "Limba preferată",
       consent: "Sunt de acord ca adresa mea să fie folosită pentru acest test.", send: "Trimite", sending: "Se trimite…",
@@ -226,7 +230,8 @@
     en: {
       page: "Kalenoth – Updates", title: "Updates", lead: "Everything that changed in the game, newest first.",
       all: "All", "new": "New", better: "Improved", fix: "Fixed", version: "version", empty: "Nothing to show here.", alt: "Kalenoth, an RPG for phones",
-      navUpdates: "Updates", navTester: "Become a tester", navDiscord: "Join Discord", testerPage: "Kalenoth – Become a tester", testerTitle: "Become a tester",
+      navUpdates: "Updates", navTester: "Become a tester", navRoadmap: "Road map", roadmapPage: "Kalenoth – Road map", roadmapTitle: "What we are working on",
+      roadmapLead: "What is coming in the next updates. Plans may change; your ideas are welcome on Discord.", roadmapUpdated: "Updated on", navDiscord: "Join Discord", testerPage: "Kalenoth – Become a tester", testerTitle: "Become a tester",
       testerLead: "The test is closed and invitation-only. Submitting this form does not guarantee a place. If you are accepted, you will receive the install link by email.",
       email: "Gmail address used on Play Store", phone: "Phone model", language: "Preferred language",
       consent: "I agree to my address being used for this test.", send: "Send", sending: "Sending…",
@@ -242,6 +247,7 @@
   var statusKey = null;
   // The same file the game downloads for its "Noutăți" page.
   var updates = [];
+  var roadmap = null;
   var loaded = false;
   var FILTERS = ["all", "new", "better", "fix"];
   var lang = "ro";
@@ -283,16 +289,17 @@
 
   function render() {
     var t = TEXT[lang];
-    var tester = location.hash === "#tester";
+    var view = location.hash === "#tester" ? "tester" : location.hash === "#roadmap" ? "roadmap" : "updates";
+    var key = view === "updates" ? "" : view;
     document.documentElement.lang = lang;
-    document.title = tester ? t.testerPage : t.page;
-    document.getElementById("title").textContent = tester ? t.testerTitle : t.title;
-    document.getElementById("lead").textContent = tester ? t.testerLead : t.lead;
-    document.getElementById("view-updates").hidden = tester;
-    document.getElementById("view-tester").hidden = !tester;
-    document.getElementById("nav-updates").toggleAttribute("aria-current", false);
-    document.getElementById("nav-tester").toggleAttribute("aria-current", false);
-    document.getElementById(tester ? "nav-tester" : "nav-updates").setAttribute("aria-current", "page");
+    document.title = key ? t[key + "Page"] : t.page;
+    document.getElementById("title").textContent = key ? t[key + "Title"] : t.title;
+    document.getElementById("lead").textContent = key ? t[key + "Lead"] : t.lead;
+    ["updates", "roadmap", "tester"].forEach(function (v) {
+      document.getElementById("view-" + v).hidden = v !== view;
+      document.getElementById("nav-" + v).toggleAttribute("aria-current", false);
+    });
+    document.getElementById("nav-" + view).setAttribute("aria-current", "page");
     document.querySelectorAll("[data-t]").forEach(function (node) {
       node.textContent = t[node.getAttribute("data-t")];
     });
@@ -339,6 +346,19 @@
       log.appendChild(article);
     });
     if (!shown && loaded) log.appendChild(el("p", "empty", t.empty));
+
+    var plans = document.getElementById("view-roadmap");
+    plans.textContent = "";
+    if (!roadmap) { if (loaded) plans.appendChild(el("p", "empty", t.empty)); return; }
+    roadmap.stages.forEach(function (stage) {
+      var article = el("article");
+      article.appendChild(el("h2", "", stage.title[lang]));
+      var list = el("ul", "plan");
+      stage.items.forEach(function (i) { list.appendChild(el("li", "", i[lang] || i.ro)); });
+      article.appendChild(list);
+      plans.appendChild(article);
+    });
+    plans.appendChild(el("p", "empty", t.roadmapUpdated + " " + formatDate(roadmap.updated)));
   }
 
   document.querySelectorAll("[data-lang]").forEach(function (b) {
@@ -391,11 +411,15 @@
   document.getElementById("t-language").value = lang === "ro" ? "Romana" : "Engleza";
   window.addEventListener("hashchange", render);
   render();
-  fetch("updates.json", { cache: "no-cache" })
-    .then(function (response) { return response.json(); })
-    .then(function (data) { updates = data.updates; })
-    .catch(function () {})
-    .then(function () { loaded = true; render(); });
+  function load(file) {
+    return fetch(file, { cache: "no-cache" }).then(function (r) { return r.json(); }).catch(function () { return null; });
+  }
+  Promise.all([load("updates.json"), load("roadmap.json")]).then(function (data) {
+    if (data[0]) updates = data[0].updates;
+    roadmap = data[1];
+    loaded = true;
+    render();
+  });
 </script>
 </body>
 </html>

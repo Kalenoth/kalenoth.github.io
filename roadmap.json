@@ -1,0 +1,51 @@
+{
+  "updated": "2026-11-24",
+  "stages": [
+    {
+      "title": { "ro": "Acum în lucru", "en": "In progress" },
+      "items": [
+        {
+          "ro": "Evenimentul de Crăciun, între 1 decembrie și 6 ianuarie: Calendarul de Advent, fulgi de nea, Târgul de iarnă și costumul de Crăciun.",
+          "en": "The Christmas event, from 1 December to 6 January: the Advent Calendar, snowflakes, the Winter Fair and the Christmas outfit."
+        },
+        {
+          "ro": "Capitolul 3, actul 3: Bolta Comorii, o hartă subterană nouă, cu Paznicul Comorii și vistiernicul Sarvan.",
+          "en": "Chapter 3, act 3: the Treasure Vault, a new underground map, with the Treasure Guardian and the treasurer Sarvan."
+        },
+        {
+          "ro": "Arme și scut din aur (tier 4) și casa până la nivelul 15.",
+          "en": "Gold weapons and shield (tier 4) and the house up to level 15."
+        },
+        {
+          "ro": "Măiestriile claselor la nivelul 25: Tank sau Berserker, Elementalist sau Summoner, Arcaș sau Asasin.",
+          "en": "Class masteries at level 25: Tank or Berserker, Elementalist or Summoner, Archer or Assassin."
+        }
+      ]
+    },
+    {
+      "title": { "ro": "Urmează", "en": "Coming next" },
+      "items": [
+        {
+          "ro": "Turnul Infinitului, partea a doua: etaje cu efecte speciale, Esența turnului cu un vânzător al ei și un clasament.",
+          "en": "Tower of Infinity, part two: floors with special effects, Tower Essence with its own merchant, and a leaderboard."
+        },
+        {
+          "ro": "Dificultatea Greu pentru dungeon-uri, deblocată după bossul învins pe Normal, cu recompense mai bune.",
+          "en": "Hard difficulty for dungeons, unlocked after beating the boss on Normal, with better rewards."
+        },
+        {
+          "ro": "Realizări (achievements) cu recompense.",
+          "en": "Achievements with rewards."
+        },
+        {
+          "ro": "Mâncare cu bonusuri temporare.",
+          "en": "Food with temporary bonuses."
+        },
+        {
+          "ro": "Cosmetice VIP: urmă, nume colorat, ramă, aură și ținută.",
+          "en": "VIP cosmetics: trail, coloured name, frame, aura and outfit."
+        }
+      ]
+    }
+  ]
+}
